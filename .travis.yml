@@ -2,7 +2,6 @@ language: php
 php: 5.5
 install:
     - composer self-update
-    - composer install
     - pear install pear/PHP_CodeSniffer
     - phpenv rehash
 script:
