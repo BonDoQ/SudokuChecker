@@ -42,6 +42,7 @@ class Checker
 
     }
 
+
     /**
      * Set Checker Puzzle
      *
@@ -53,6 +54,7 @@ class Checker
     {
         $this->puzzle = $puzzle;
         return $this;
+
     }
 
 
@@ -78,6 +80,7 @@ class Checker
         return $linearArray;
 
     }
+
 
     /**
      * Convert Sudoku Matrix to array of linear arrays to check duplicates
