@@ -42,6 +42,19 @@ class Checker
 
     }
 
+    /**
+     * Set Checker Puzzle
+     *
+     * @param array() $puzzle Sudoku Puzzle
+     *
+     * @return Checker Checker Instance for Chaining
+     */
+    public function setPuzzle($puzzle)
+    {
+        $this->puzzle = $puzzle;
+        return $this;
+    }
+
 
     /**
      * extract sub of a Puzzle into linear array
