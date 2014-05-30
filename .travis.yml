@@ -2,6 +2,11 @@ language: php
 php: 5.5
 install:
     - composer self-update
+    - composer install
+script:
     - composer update --prefer-dist
     - phpunit
+    - phpcs -s Checker.php
+
+
 
