@@ -11,7 +11,6 @@
  * @license  Apache <http://www.apache.org/licenses/LICENSE-2.0.html>
  * @link     <http://github/bondoq>
  */
-namespace Sudoku;
 
 /**
  * Class Checker

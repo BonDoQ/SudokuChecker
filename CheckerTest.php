@@ -1,6 +1,6 @@
 <?php
 
-include 'Checker.php';
+require 'Checker.php';
 
 class CheckerTest extends PHPUnit_Framework_TestCase
 {
@@ -49,7 +49,7 @@ class CheckerTest extends PHPUnit_Framework_TestCase
             [8, 6, 2, 5, 3, 7, 4, 9, 1],
             [1, 5, 7, 4, 6, 9, 3, 8, 2],
         ];
-        $this->checker = new Checker($this->puzzleOne);
+        $this->checker   = new Checker($this->puzzleOne);
     }
 
     /**
@@ -90,6 +90,9 @@ class CheckerTest extends PHPUnit_Framework_TestCase
     public function testCheckerClass()
     {
         $result = $this->checker->check($this->puzzleOne);
+        $this->assertEquals(true, $result);
+
+        $result = $this->checker->check($this->puzzleTwo);
         $this->assertEquals(true, $result);
     }
 
